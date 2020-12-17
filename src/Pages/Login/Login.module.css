@@ -1,0 +1,31 @@
+.container {
+    height: 100vh;
+    color:darkred;
+    /* background-color:darkgray; */
+    background-image: url("https://media.macphun.com/img/uploads/customer/blog/1543597882/15435988395c0172f73a0f39.30775845.jpg?q=85&w=1680");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .loginFormContainer {
+    width: 24rem;
+  }
+  
+  .loginFormLegend {
+    width: 14rem;
+    background: cadetblue;
+  }
+  
+  .errorMessage {
+    font-size: 12px;
+    letter-spacing: 0.05rem;
+    padding-left: 0.25rem;
+    color: red;
+  }
+  fieldset {
+    background-color: black;
+    color: white;
+  }
+  legend {
+    background-color: black;
+  }

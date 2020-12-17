@@ -1,0 +1,25 @@
+.container {
+  height: 100vh;
+  color: chocolate;
+  /* background-color: cornsilk; */
+  background-image: url("https://i2.wp.com/www.imagethink.net/wp-content/uploads/2020/10/VirtualBackgrounds-Christmas-ImageThink.jpg?resize=1020%2C574&ssl=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.registrationFormContainer {
+  width: 24rem;
+  color:brown;
+  /* background-color: darkgoldenrod; */
+}
+
+.registrationFormLegend {
+  width: 14rem;
+  background: chocolate
+}
+.errorMessage {
+    font-size: 12px;
+    letter-spacing: 0.05rem;
+    padding-left: 0.25rem;
+    color: red;
+}
