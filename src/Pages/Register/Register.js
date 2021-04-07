@@ -4,6 +4,8 @@ import styles from "./Register.module.css";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import config from "../../config";
+import Button from "../../Button/button.js";
+import "../../Button/button.css";
 
 const Register = () => {
   const { register, handleSubmit, errors } = useForm();
@@ -60,7 +62,7 @@ const Register = () => {
             Registration Form
           </legend>
           <form onSubmit={handleSubmit(onSubmit)} noValidate autoComplete="off">
-          <div className="form-group">
+            <div className="form-group">
               <label htmlFor="inputForName">Name</label>
               <span className="mandatory">*</span>
               <input
@@ -196,12 +198,12 @@ const Register = () => {
               )}
             </div>
             <div className="d-flex align-items-center justify-content-center">
-              <button type="submit" className="btn btn-outline-primary">
-                Submit
-              </button>
-              <button className="btn btn-link">
+              <Button variant="success" size={"sm"}>
+                Register
+              </Button>&nbsp;&nbsp;&nbsp;
+              <Button variant="warning" className="new-user">
                 <Link to="/login">Cancel</Link>
-              </button>
+              </Button>
             </div>
           </form>
         </fieldset>

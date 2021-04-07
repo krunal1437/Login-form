@@ -6,6 +6,8 @@ import styles from "./Login.module.css";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import config from "../../config";
+import Button from "../../Button/button.js";
+import "../../Button/button.css";
 
 const Login = () => {
   const { register, handleSubmit, errors } = useForm();
@@ -129,13 +131,12 @@ const Login = () => {
               <img src={this.state.preview} alt="Preview" />
             </div> */}
             <div className="d-flex align-items-center">
-              <button type="submit" className="btn btn-outline-primary">
+              <Button variant="danger" size={"sm"}>
                 Login
-              </button>
-
-              <button className="btn btn-link ml-auto">
+              </Button>&nbsp;&nbsp;&nbsp;
+              <Button variant="info" className="new-user">
                 <Link to="/register">New User</Link>
-              </button>
+              </Button>
             </div>
           </form>
         </fieldset>
